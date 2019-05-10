@@ -24,11 +24,8 @@
     </van-row>
     <!-- 轮播图 -->
     <van-swipe :autoplay="3000" indicator-color="white" class='bp-banner'>
-        <van-swipe-item>
-            <img :src="img.banner" alt="">
-        </van-swipe-item>
-        <van-swipe-item>
-            <img :src="img.banner" alt="">
+        <van-swipe-item v-for='(item,index)  in datas.swiper' :key="index">
+            <img :src="item" alt="">
         </van-swipe-item>
         <!-- 自定义滑块 -->
         <!-- <div class="custom-indicator" slot="indicator">
@@ -38,42 +35,13 @@
     <!-- 导航 -->
     <div class='Navbar'>
         <van-row class="nav_main">
-            <van-col span="6">
-                <div class='img-box'><img :src="img.t1" alt=""></div>
-                <p class='img-item'>上装上新</p>
-            </van-col>
-            <van-col span="6">
-                <div class='img-box'><img :src="img.t2" alt=""></div>
-                <p class='img-item'>下装装上新</p>
-            </van-col>
-            <van-col span="6">
-                <div class='img-box'><img :src="img.t3" alt=""></div>
-                <p class='img-item'>套装上新</p>
-            </van-col>
-            <van-col span="6">
-                <div class='img-box'><img :src="img.t4" alt=""></div>
-                <p class='img-item'>亲子装上新</p>
-            </van-col>
-            <van-col span="6">
-                <div class='img-box'><img :src="img.b1" alt=""></div>
-                <p class='img-item'>鞋子上新</p>
-            </van-col>
-            <van-col span="6">
-                <div class='img-box'><img :src="img.b2" alt=""></div>
-                <p class='img-item'>玩具上新</p>
-            </van-col>
-            <van-col span="6">
-                <div class='img-box'><img :src="img.b3" alt=""></div>
-                <p class='img-item'>辣爸辣妈</p>
-            </van-col>
-            <van-col span="6">
-                <div class='img-box'><img :src="img.b4" alt=""></div>
-                <p class='img-item'>全部上新</p>
+            <van-col span="6" v-for="(item,index) in datas.navdata"  :key="index">
+                <div class='img-box'><img :src="item.img" alt=""></div>
+                <p class='img-item'>{{item.title}}</p>
             </van-col>
         </van-row>
-    <!-- 优惠信息 -->
     </div>
-        
+    <!-- 优惠信息 -->  
     <div class='bp-discount'>
         <img :src="img.discount" alt="优惠">
     </div>
@@ -114,19 +82,19 @@
         </div>
         <div class="bp-recomlist-list">
             <van-row>
-                <van-col span="12" v-for="index in 6" :key="index">
+                <van-col span="12" v-for="(item,index) in datas.recomlist" :key="index">
                     <div class='bp-recomlist-list-main'>
                         <div class='bp-recomlist-list-main-clothes'>
-                           <img :src="img.clothes1"> 
+                           <img :src="item.img"> 
                         </div>
                         <div class="bp-recomlist-list-main-title">
                             <span>
-                                <i>热卖</i>新款夏季儿童短袖套装男女t恤套装男女t恤套装男女t恤
+                                <i>热卖</i>{{item.title}}
                             </span>
                         </div>
                         <div class="bp-recomlist-list-main-price">
                             <div class='price'>
-                                ￥280.00
+                                ￥{{item.price}}
                             </div>
                             <div class='add-shopcar'>
                                 <van-icon name="shopping-cart" color='#fe7537' size='20px'/>
@@ -149,18 +117,39 @@
             </div>
         </div>
         <div class="bp-hot-list">
-                <img :src="img.hotTitle" alt="">
+            <img class='hotTitle' :src="img.hotTitle" alt="">
             <van-row gutter="20">
-                
-                <van-col span='8'>
-                    <img :src="img.hotimg" alt="">
-                </van-col>
-                <van-col span='8'>
-                    <img :src="img.hotimg2" alt="">
-                </van-col>
-                <van-col span='8'>
-                    <img :src="img.hotimg3" alt="">
-                </van-col>
+                <div class=''>
+                    <van-col span='8'>
+                        <img :src="img.hotimg" alt="">
+                        <div class='hotprice'>
+                            ￥150.00
+                        </div>
+                    </van-col>
+                    <van-col span='8'>
+                        <img :src="img.hotimg2" alt="">
+                    </van-col>
+                    <van-col span='8'>
+                        <img :src="img.hotimg3" alt="">
+                    </van-col>
+                </div>
+            </van-row>
+        </div>
+        <div class='bp-Sep'></div>
+        <div class="bp-hot-list">
+            <img class='hotTitle' :src="img.hotTitle" alt="">
+            <van-row gutter="20">
+                <div class=''>
+                    <van-col span='8'>
+                        <img :src="img.hotimg" alt="">
+                    </van-col>
+                    <van-col span='8'>
+                        <img :src="img.hotimg2" alt="">
+                    </van-col>
+                    <van-col span='8'>
+                        <img :src="img.hotimg3" alt="">
+                    </van-col>
+                </div>
             </van-row>
         </div>
     </div>
@@ -182,11 +171,76 @@ export default {
   data() {
     return {
       datas: {
-        section1: {},
-        section2: {},
-        section3: {},
-        section4: {},
-        swiper: []
+        swiper: [
+          "static/images/banner.png",
+          "static/images/banner.png",
+          "static/images/banner.png",
+          "static/images/banner.png"
+        ],
+        navdata: [
+          {
+            img: "static/images/t1.png",
+            title: "上装上新"
+          },
+          {
+            img: "static/images/t2.png",
+            title: "下装上新"
+          },
+          {
+            img: "static/images/t3.png",
+            title: "套装上新"
+          },
+          {
+            img: "static/images/t4.png",
+            title: "亲子装上新"
+          },
+          {
+            img: "static/images/b1.png",
+            title: "鞋子上新"
+          },
+          {
+            img: "static/images/b2.png",
+            title: "玩具上新"
+          },
+          {
+            img: "static/images/b3.png",
+            title: "辣爸辣妈"
+          },
+          {
+            img: "static/images/b4.png",
+            title: "全部上新"
+          }
+        ],
+        recomlist:[
+            {
+                img:"static/images/0A6A2954.png",
+                title:'新款夏季儿童短袖套装男女t恤套装男女t恤套装男女t恤',
+                price:'280'
+            },
+            {
+                img:"static/images/0A6A2957c.png",
+                title:'2新款夏季儿童短袖套装男女t恤套装男女t恤套装男女t恤',
+                price:'1280'
+            },{
+                img:"static/images/0A6A2954.png",
+                title:'12新款夏季儿童短袖套装男女t恤套装男女t恤套装男女t恤',
+                price:'280'
+            },
+            {
+                img:"static/images/0A6A2957c.png",
+                title:'2新款夏季儿童短袖套装男女t恤套装男女t恤套装男女t恤',
+                price:'1280'
+            },{
+                img:"static/images/0A6A2954.png",
+                title:'12新款夏季儿童短袖套装男女t恤套装男女t恤套装男女t恤',
+                price:'2820'
+            },
+            {
+                img:"static/images/0A6A2957c.png",
+                title:'24新款夏季儿童短袖套装男女t恤套装男女t恤套装男女t恤',
+                price:'1280'
+            },
+        ]
       },
       loading: true,
       active: 0,
@@ -210,10 +264,10 @@ export default {
         HOT: "static/images/HOT.png",
         clothes1: "static/images/0A6A2954.png",
         clothes2: "static/images/0A6A2954c.png",
-        hotTitle:'static/images/hotTitle.png',
-        hotimg:'static/images/hotimg.png',
-        hotimg2:'static/images/hotimg2.png',
-        hotimg3:'static/images/hotimg3.png',
+        hotTitle: "static/images/hotTitle.png",
+        hotimg: "static/images/hotimg.png",
+        hotimg2: "static/images/hotimg2.png",
+        hotimg3: "static/images/hotimg3.png"
       }
     };
   },
@@ -224,7 +278,8 @@ export default {
       url: "/index"
     })
       .then(response => {
-        this.datas = response.data;
+        console.log(response);
+        // this.datas = response.data;
       })
       .catch(function(error) {
         alert(error);

@@ -204,6 +204,7 @@
 }
 .index .bp-recomlist-list-main-clothes {
   text-align: center;
+  min-height: 135px;
 }
 .index .bp-recomlist-list-main-clothes img {
   width: 70%;
@@ -264,4 +265,18 @@
 }
 .index .bp-hot-list img {
   width: 100%;
+}
+.index .bp-hot-list .hotTitle {
+  width: 100%;
+  margin: 10px 0;
+}
+.index .bp-hot-list .hotprice {
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+}
+.index .bp-Sep {
+  height: 20px;
+  background: #fff2ec;
+  margin-top: 10px;
 }

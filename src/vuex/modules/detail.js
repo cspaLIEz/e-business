@@ -63,9 +63,9 @@ const mutations = {
   },
 
 // loading开关
-  [types.SET_LOADING] (state,res) {
-    state.fetchLoading = res
-  },
+  // [types.SET_LOADING] (state,res) {
+  //   state.fetchLoading = res
+  // },
 // 购物车里打钩的商品
   ['SET_SELECTEDLIST'] (state,res) {
     state.selectedList = Util.getLocal('selectedList')

@@ -38,7 +38,7 @@ export const SET_UNSELECTEDLIST = 'SET_UNSELECTEDLIST'
 
 //全局loading状态
 
-export const SET_LOADING = 'SET_LOADING'
+// export const SET_LOADING = 'SET_LOADING'
 
 // 改变token(权限)
 export const CHANGE_TOKEN = 'CHANGE_TOKEN'

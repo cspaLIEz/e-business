@@ -1,0 +1,267 @@
+.index {
+  width: 100%;
+  padding-bottom: 14vw;
+  position: relative;
+}
+.index .head {
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+.index .head .search_input {
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 13px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+.index .head .search_letf {
+  font-size: 24px;
+}
+.index .head .search_right {
+  font-size: 24px;
+}
+.index .bp-banner {
+  z-index: -1;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  min-height: 200px;
+}
+.index .bp-banner img {
+  width: 100%;
+}
+.index .bp-banner .van-swipe__indicators {
+  bottom: 52px;
+}
+.index .Navbar {
+  width: 92%;
+  margin: -48px auto 0;
+  padding-bottom: 15px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 1px 2px 1px #fff3f3;
+}
+.index .Navbar .nav_main {
+  text-align: center;
+}
+.index .Navbar .nav_main .img-box img {
+  width: 40px;
+  height: 40px;
+  margin: 20px 20px 10px;
+}
+.index .Navbar .nav_main .img-item {
+  font-size: 12px;
+  color: #000;
+}
+.index .bp-discount {
+  width: 92%;
+  margin: 10px auto;
+}
+.index .bp-discount img {
+  width: 100%;
+}
+.index .bp-recommend {
+  height: 180px;
+  width: 92%;
+  margin: 10px auto;
+}
+.index .bp-recommend .bp-recom-left .bp-recom-main {
+  position: relative;
+  width: 94%;
+  height: 180px;
+  margin: auto;
+  background-size: cover;
+  background-image: url("../../../static/images/rebgletf.png");
+  border-radius: 4px;
+}
+.index .bp-recommend .bp-recom-left .bp-recom-main .bp-recom-title {
+  color: #ff2735;
+  font-size: 14px;
+  padding: 10px 10px 0;
+}
+.index .bp-recommend .bp-recom-left .bp-recom-main .bp-recom-item {
+  color: #ff5963;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.index .bp-recommend .bp-recom-left .bp-recom-main img {
+  max-width: 118px;
+  max-height: 118px;
+  position: absolute;
+  left: 10%;
+  bottom: 20px;
+}
+.index .bp-recommend .bp-recom-right {
+  height: 180px;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-top {
+  position: relative;
+  width: 94%;
+  height: 85px;
+  margin: auto;
+  background-size: cover;
+  background-image: url("../../../static/images/rebgritop.png");
+  border-radius: 4px;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-top .bp-recom-title {
+  color: #0052d5;
+  font-size: 14px;
+  padding: 10px 10px 0;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-top .bp-recom-item {
+  color: #156fff;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-top img {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  max-width: 80px;
+  max-height: 78px;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-buttom {
+  position: relative;
+  width: 94%;
+  height: 85px;
+  margin: auto;
+  background-size: cover;
+  background-image: url("../../../static/images/rebgritop.png");
+  border-radius: 4px;
+  margin-top: 10px;
+  background-image: url("../../../static/images/rebgribt.png");
+}
+.index .bp-recommend .bp-recom-right .bp-recom-buttom .bp-recom-title {
+  color: #0052d5;
+  font-size: 14px;
+  padding: 10px 10px 0;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-buttom .bp-recom-item {
+  color: #156fff;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-buttom img {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  max-width: 80px;
+  max-height: 78px;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-buttom .bp-recom-title {
+  color: #8f59ff;
+  font-size: 14px;
+  padding: 10px 10px 0;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-buttom .bp-recom-item {
+  color: #ccb3ff;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.index .bp-recommend .bp-recom-right .bp-recom-buttom img {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  max-width: 90px;
+  max-height: 78px;
+}
+.index .bp-recomlist-link {
+  height: 20px;
+}
+.index .bp-recomlist-link-left {
+  float: left;
+  left: 80px;
+  width: 50%;
+}
+.index .bp-recomlist-link-left img {
+  height: 20px;
+}
+.index .bp-recomlist-link-right {
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.index .bp-recomlist-link-right span {
+  position: relative;
+  right: -8px;
+  top: -6px;
+}
+.index .bp-recomlist-list {
+  margin: 10px auto 0;
+  width: 94%;
+}
+.index .bp-recomlist-list-main {
+  width: 94%;
+  margin: auto;
+  background: #fffaf8;
+  margin-bottom: 10px;
+}
+.index .bp-recomlist-list-main-clothes {
+  text-align: center;
+}
+.index .bp-recomlist-list-main-clothes img {
+  width: 70%;
+  margin: 10px auto;
+}
+.index .bp-recomlist-list-main-title {
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.index .bp-recomlist-list-main-title i {
+  background: #fe7537;
+  color: #fff;
+  padding: 1px 4px;
+  border-radius: 16px;
+  margin-right: 4px;
+}
+.index .bp-recomlist-list-main-price {
+  font-size: 16px;
+  color: #fe7537;
+  padding: 6px 10px;
+  height: 30px;
+}
+.index .bp-recomlist-list-main-price .price {
+  float: left;
+}
+.index .bp-recomlist-list-main-price .add-shopcar {
+  float: right;
+}
+.index .bp-hot-link {
+  height: 20px;
+}
+.index .bp-hot-link-left {
+  float: left;
+  left: 80px;
+  width: 50%;
+}
+.index .bp-hot-link-left img {
+  height: 20px;
+}
+.index .bp-hot-link-right {
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.index .bp-hot-link-right span {
+  position: relative;
+  right: -8px;
+  top: -6px;
+}
+.index .bp-hot-list {
+  width: 92%;
+  margin: auto;
+}
+.index .bp-hot-list img {
+  width: 100%;
+}

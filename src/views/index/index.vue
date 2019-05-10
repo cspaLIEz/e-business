@@ -34,12 +34,14 @@
     </van-swipe>
     <!-- 导航 -->
     <div class='Navbar'>
+        <router-link to="/Classlist">
         <van-row class="nav_main">
             <van-col span="6" v-for="(item,index) in datas.navdata"  :key="index">
                 <div class='img-box'><img :src="item.img" alt=""></div>
                 <p class='img-item'>{{item.title}}</p>
             </van-col>
         </van-row>
+        </router-link>
     </div>
     <!-- 优惠信息 -->  
     <div class='bp-discount'>
@@ -86,6 +88,7 @@
     </div>
     <!-- 专装热卖 -->
     <div class="bp-hot">
+        <router-link to="/hot"></router-link>
         <div class="bp-hot-link">
             <div class="bp-recomlist-link-left">
                 <img :src="img.HOT" alt="">

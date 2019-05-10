@@ -1,0 +1,49 @@
+.classlist {
+    .bp-tabs {
+        height: 40px;
+        line-height: 38px;
+        font-size: 12px;
+        overflow-y: scroll;
+        margin-top: 10px;
+        background: #fffaf8;
+        .bp-tab-main {
+            width: 480px;
+        }
+
+        .bp-tab {
+            // float: left;
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+
+            // margin: 0 10px;
+            .border {
+                height: 2px;
+                background: linear-gradient(left, #fdb57f, #fb555b);
+                width: 62%;
+                margin: auto;
+                border-radius: 2px;
+                display: none;
+
+            }
+
+        }
+
+        .active .border {
+            display: block
+        }
+    }
+
+    .bp-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hot-title-img {
+        width: 92%;
+        margin: 10px auto;
+
+        img {
+            width: 100%
+        }
+    }
+}

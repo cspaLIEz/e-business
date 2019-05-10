@@ -115,3 +115,16 @@ h6 {
 .csp-icon-home::before {
   content: '\&#xf0178;';
 }
+.van-nav-bar {
+  background: linear-gradient(top, #fd626b, #fe8f6d);
+}
+.van-nav-bar .van-nav-bar__title {
+  color: #fff;
+}
+.van-nav-bar .van-nav-bar .van-icon {
+  color: #fff;
+}
+.van-nav-bar .van-nav-bar__arrow {
+  font-size: 20px;
+  color: #fff;
+}

@@ -1,0 +1,37 @@
+.classlist .bp-tabs {
+  height: 40px;
+  line-height: 38px;
+  font-size: 12px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  background: #fffaf8;
+}
+.classlist .bp-tabs .bp-tab-main {
+  width: 480px;
+}
+.classlist .bp-tabs .bp-tab {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+}
+.classlist .bp-tabs .bp-tab .border {
+  height: 2px;
+  background: linear-gradient(left, #fdb57f, #fb555b);
+  width: 62%;
+  margin: auto;
+  border-radius: 2px;
+  display: none;
+}
+.classlist .bp-tabs .active .border {
+  display: block;
+}
+.classlist .bp-tabs::-webkit-scrollbar {
+  display: none;
+}
+.classlist .hot-title-img {
+  width: 92%;
+  margin: 10px auto;
+}
+.classlist .hot-title-img img {
+  width: 100%;
+}

@@ -71,6 +71,7 @@
     </div>
     <!-- 猜你喜欢 -->
     <div class='bp-recomlist'>
+        <router-link to='/hot'>
         <div class="bp-recomlist-link">
             <div class="bp-recomlist-link-left">
                 <img :src="img.Guessyoulikeit" alt="">
@@ -80,30 +81,8 @@
                 <van-icon name="arrow" color='#fe7537' size='24px'/>
             </div>
         </div>
-        <div class="bp-recomlist-list">
-            <van-row>
-                <van-col span="12" v-for="(item,index) in datas.recomlist" :key="index">
-                    <div class='bp-recomlist-list-main'>
-                        <div class='bp-recomlist-list-main-clothes'>
-                           <img :src="item.img"> 
-                        </div>
-                        <div class="bp-recomlist-list-main-title">
-                            <span>
-                                <i>热卖</i>{{item.title}}
-                            </span>
-                        </div>
-                        <div class="bp-recomlist-list-main-price">
-                            <div class='price'>
-                                ￥{{item.price}}
-                            </div>
-                            <div class='add-shopcar'>
-                                <van-icon name="shopping-cart" color='#fe7537' size='20px'/>
-                            </div>
-                        </div>
-                    </div>
-                </van-col>
-            </van-row>
-        </div>
+        </router-link>
+        <v-bplist :data='datas.recomlist'></v-bplist>
     </div>
     <!-- 专装热卖 -->
     <div class="bp-hot">
@@ -128,9 +107,15 @@
                     </van-col>
                     <van-col span='8'>
                         <img :src="img.hotimg2" alt="">
+                        <div class='hotprice'>
+                            ￥150.00
+                        </div>
                     </van-col>
                     <van-col span='8'>
                         <img :src="img.hotimg3" alt="">
+                        <div class='hotprice'>
+                            ￥150.00
+                        </div>
                     </van-col>
                 </div>
             </van-row>
@@ -142,12 +127,21 @@
                 <div class=''>
                     <van-col span='8'>
                         <img :src="img.hotimg" alt="">
+                        <div class='hotprice'>
+                            ￥150.00
+                        </div>
                     </van-col>
                     <van-col span='8'>
                         <img :src="img.hotimg2" alt="">
+                        <div class='hotprice'>
+                            ￥150.00
+                        </div>
                     </van-col>
                     <van-col span='8'>
                         <img :src="img.hotimg3" alt="">
+                        <div class='hotprice'>
+                            ￥150.00
+                        </div>
                     </van-col>
                 </div>
             </van-row>
@@ -167,7 +161,9 @@
 
 <script>
 import index from "@/http/mock.js"; //模拟数据
+import Bplist from '@/components/BPlist'
 export default {
+components:{'v-bplist':Bplist},
   data() {
     return {
       datas: {

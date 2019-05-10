@@ -192,52 +192,6 @@
   right: -8px;
   top: -6px;
 }
-.index .bp-recomlist-list {
-  margin: 10px auto 0;
-  width: 94%;
-}
-.index .bp-recomlist-list-main {
-  width: 94%;
-  margin: auto;
-  background: #fffaf8;
-  margin-bottom: 10px;
-}
-.index .bp-recomlist-list-main-clothes {
-  text-align: center;
-  min-height: 135px;
-}
-.index .bp-recomlist-list-main-clothes img {
-  width: 70%;
-  margin: 10px auto;
-}
-.index .bp-recomlist-list-main-title {
-  padding: 0 10px;
-  font-size: 12px;
-  line-height: 18px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-.index .bp-recomlist-list-main-title i {
-  background: #fe7537;
-  color: #fff;
-  padding: 1px 4px;
-  border-radius: 16px;
-  margin-right: 4px;
-}
-.index .bp-recomlist-list-main-price {
-  font-size: 16px;
-  color: #fe7537;
-  padding: 6px 10px;
-  height: 30px;
-}
-.index .bp-recomlist-list-main-price .price {
-  float: left;
-}
-.index .bp-recomlist-list-main-price .add-shopcar {
-  float: right;
-}
 .index .bp-hot-link {
   height: 20px;
 }
